@@ -21,7 +21,7 @@ section {
 /*banner start */
 .banner {
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../images/Group\ 13\ \(1\)\ \(1\).png);
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,9 +234,45 @@ section {
     font-family: Mulish;
 }
 
+/* why choose us section */
 
-
-
+.whyChoose-heading {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.whyChoose-heading .whyChoose-info {
+    margin: 24px 0 48px;
+}
+.whyChoose-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 2%;
+}
+.whyChoose-items .item {
+    width: 48%;
+    padding: 32px;
+    border-radius: 16px;
+}
+.item-1,.item-3 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+.item-2 {
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+.item-3 {
+    margin-top: 2%;
+}
+.item .item-title {
+    margin: 32px 0 16px 0;
+    color: #131318;
+font-size: 24px;
+font-weight: 800;
+}
 
 
 
@@ -357,6 +393,23 @@ line-height: 24px;
 }
 
 /* destination end */
+/* why choose responsive start */
+#whyChoose {
+    margin: 20px;
+}
+.whyChoose-heading {
+    width: 100%;
+}
+.whyChoose-items {
+    flex-direction: column;
+    gap: 20px;
+}
+.item-3 {
+    margin-top: 0;
+}
+.whyChoose-items .item{
+    width: 100%;
+}
 
-
+/* why choose responsive end */
 }
