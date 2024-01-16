@@ -623,10 +623,10 @@ footer {
     color: #FF5400;
     font-size: 32px;
 }
-
-.footer-info {
-    margin: 15px 0 32px 0;
-}
+    .footer-info {
+        margin: 15px auto 32px;
+        width: 44%;
+    }
 
 .icons {
     display: flex;
@@ -647,8 +647,8 @@ footer {
 
 /* footer end */
 
-/* responsive 992px to lower resolution */
-@media (max-width:992px) {
+/* responsive 600px to lower resolution */
+@media (max-width:600px) {
     section {
         margin-bottom: 25px;
     }
@@ -990,6 +990,10 @@ footer {
     /* footer responsive start */
     footer {
         padding: 50px 20px;
+    }
+    .footer-info {
+        width: 100%;
+        text-align: center;
     }
 
 }
