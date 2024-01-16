@@ -443,7 +443,52 @@ section {
     padding-right: 30px;
     line-height: 60px;
 }
-
+/* testimonial */
+.main-testimonial {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.testimonial-heading {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.testimonial-title {
+    margin-bottom: 24px;
+}
+.testimonial-info {
+    margin-bottom: 48px;
+}
+.person {
+    background: rgba(251, 181, 99, 0.05);
+    text-align: center;
+    border: 1px solid rgba(251, 181, 99, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 33%;
+}
+.person img {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 10px solid #f5f5f6;
+    object-fit: cover;
+}
+.person p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    line-height: 26px;
+    height: 80px;
+}
 /* newsletter section start */
 .newsletter {
     display: flex;
@@ -776,8 +821,7 @@ footer {
         right: 16px;
         margin: auto;
         width: 90%;
-        height: 355px;
-        bottom: -90px;
+        bottom: -65px;
     }
 
     .middle .inner-body {
@@ -818,7 +862,7 @@ footer {
     .perfectPlace-title {
         font-size: 20px;
         line-height: 30px;
-        width: 75%;
+        width: 80%;
     }
 
     .perfectPlace-right iframe {
@@ -834,7 +878,26 @@ footer {
         font-size: 14px;
         line-height: 24px;
     }
-
+    /* testimonial */
+    #testimonial {
+        margin: 20px;
+    }
+    .main-testimonial {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .person {
+        width: 100%;
+    }
+    .person p {
+        height: auto;
+    }
+    .testimonial-heading {
+        width: 100%;
+    }
+    .testimonial-info {
+        margin: 15px 0;
+    }
     /* newsletter section */
     #newsletter {
         margin: 20px;
