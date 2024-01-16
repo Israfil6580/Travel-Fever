@@ -10,13 +10,75 @@ body {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1280px;
     margin: auto;
 }
 
 section {
     margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+/* navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 53px 0;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.navbar ul li a {
+    margin-left: 44px;
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+}
+.navbar ul li a.active {
+    color: #FF5400;
+font-size: 18px;
+font-weight: 700;
+}
+
+.logo h2 {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #FF5400;
+}
+
+/*  */
+
+.menu-btn {
+    font-size: 25px;
+    color: #424247;
+    float: right;
+    cursor: pointer;
+    display: none;
+    padding-right: 30px;
+}
+#menu {
+    display: none;
+}
+
+/*  */
 
 /*banner start */
 .banner {
@@ -505,7 +567,7 @@ section {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     line-height: 26px;
-    height: 80px;
+    height: 90px;
 }
 
 /* testimonial section end */
@@ -568,6 +630,7 @@ form input {
 
 .newsletter-image img {
     width: 100%;
+    height: 100%;
 }
 
 .newsletter-image {
@@ -623,10 +686,11 @@ footer {
     color: #FF5400;
     font-size: 32px;
 }
-    .footer-info {
-        margin: 15px auto 32px;
-        width: 44%;
-    }
+
+.footer-info {
+    margin: 15px auto 32px;
+    width: 44%;
+}
 
 .icons {
     display: flex;
@@ -652,10 +716,45 @@ footer {
     section {
         margin-bottom: 25px;
     }
+    /* nav responsive  */
+    .menu-btn {
+        display: block;
+    }
+    ul {
+        position: absolute;
+        width: 91%;
+        top: 120px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        transition: all .5s ease-in-out;
+        background: #FF5400;
+        border-radius: 16px;
+        margin-left: 20px;
+    }
+    ul li {
+        padding: 10px 0;
+    }
+    .navbar ul li a {
+        color: rgb(255, 255, 255);
+    }
+    .navbar ul li a.active {
+        color: #fff;
+    }
+    #menu:checked ~ ul{
+        left: 0;
+    }
+    .logo h2 {
+        font-size: 25px;
+    }
+    .logo img {
+        width: 40px;
+        height: auto;
+    }
+    /* nav responsive end */
 
     /* banner responsive start*/
     .banner {
-        margin: 20px;
         height: 100%;
         padding: 25px;
     }
@@ -685,7 +784,6 @@ footer {
     /* popular tours responsive start */
     .popular {
         flex-direction: column;
-        margin: 20px;
         gap: 40px;
     }
 
@@ -755,6 +853,7 @@ footer {
 
     .layout img {
         aspect-ratio: 16/9;
+        border-radius: 16px;
     }
 
 
@@ -797,9 +896,6 @@ footer {
     /* destination responsive end */
 
     /* why choose responsive start */
-    #whyChoose {
-        margin: 20px;
-    }
 
     .whyChoose-heading {
         width: 100%;
@@ -829,9 +925,6 @@ footer {
     /* why choose responsive end */
 
     /* deals & discouts responsive start */
-    #deals {
-        margin: 20px;
-    }
 
     .deals-heading {
         width: 100%;
@@ -887,9 +980,6 @@ footer {
     /* deals & discouts responsive end */
 
     /* perfect place section start */
-    #perfect-place {
-        margin: 20px;
-    }
 
     .perfect-place {
         flex-direction: column;
@@ -924,10 +1014,6 @@ footer {
 
     /* testimonial responsive start*/
 
-    #testimonial {
-        margin: 20px;
-    }
-
     .main-testimonial {
         flex-direction: column;
         gap: 24px;
@@ -952,10 +1038,6 @@ footer {
     /* testimonial responisive end */
 
     /* newsletter responsive section start*/
-    #newsletter {
-        margin: 20px;
-    }
-
     .newsletter {
         flex-direction: column;
     }
@@ -991,9 +1073,9 @@ footer {
     footer {
         padding: 50px 20px;
     }
+
     .footer-info {
         width: 100%;
         text-align: center;
     }
-
 }
