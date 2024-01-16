@@ -328,7 +328,7 @@ section {
 }
 
 .deals-info {
-    margin: 24px 0 48px 0;
+    margin: 15px 0 48px 0;
 }
 
 .top,
@@ -355,7 +355,7 @@ section {
 }
 
 .bottom {
-    background: url(../images/Group\ 40089.png), lightgray 50%;
+    background: url(../images/Group\ 39.png), lightgray 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -427,9 +427,8 @@ section {
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
-    margin-bottom: 16px;
+    margin: 24px 0 16px 0;
 }
-
 .perfectPlace-left ul li:last-child {
     color: #131318;
     font-size: 16px;
@@ -437,6 +436,7 @@ section {
     line-height: 26px;
     margin-bottom: 32px;
 }
+
 
 .perfectPlace-title {
     font-size: 40px;
@@ -734,9 +734,8 @@ footer {
     }
 
     .whyChoose-heading .whyChoose-info {
-        margin: 24px 0;
+        margin: 15px 0 24px 0;
     }
-
     .item .item-title {
         font-size: 20px;
     }
@@ -819,6 +818,7 @@ footer {
     .perfectPlace-title {
         font-size: 20px;
         line-height: 30px;
+        width: 75%;
     }
 
     .perfectPlace-right iframe {
@@ -866,7 +866,7 @@ footer {
     }
 
     .newsletter-info {
-        padding-right: 0;
+        width: 100%;
     }
 
     /* newsletter responsive end */
